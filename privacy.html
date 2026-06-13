@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سياسة الخصوصية - MyCraftMods</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./images/enderpearl.png" type="image/png">
+  <style>
+    @font-face {
+      font-family: "PixelAE-Regular";
+      src: url("./fonts/PixelAE-Regular.ttf");
+    }
+    * { font-family: "PixelAE-Regular"; }
+    body { background-color: #ecf0f1; }
+    .nav-link:hover { color: #2ecc71; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-gray-800 text-white shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center" dir="ltr">
+      <div class="flex items-center">
+        <a href="index.html"><h1 class="text-2xl font-bold text-green-400">MyCraftMods</h1></a>
+      </div>
+      <nav class="hidden md:flex items-center gap-6" dir="rtl">
+        <a href="index.html" class="nav-link text-gray-300 hover:text-green-400 transition duration-200">🏠 الرئيسية</a>
+        <a href="about.html" class="nav-link text-gray-300 hover:text-green-400 transition duration-200">👥 من نحن</a>
+        <a href="contact.html" class="nav-link text-gray-300 hover:text-green-400 transition duration-200">📬 تواصل معنا</a>
+        <a href="privacy.html" class="text-green-400 font-bold border-b-2 border-green-400 pb-0.5">🔒 سياسة الخصوصية</a>
+      </nav>
+      <button id="burgerBtn" class="md:hidden text-white focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div id="mobileNav" class="hidden md:hidden bg-gray-700" dir="rtl">
+    <a href="index.html" class="block w-full px-5 py-3 text-gray-300 border-b border-gray-600 hover:bg-gray-600 hover:text-green-400 transition duration-200">🏠 الرئيسية</a>
+    <a href="about.html" class="block w-full px-5 py-3 text-gray-300 border-b border-gray-600 hover:bg-gray-600 hover:text-green-400 transition duration-200">👥 من نحن</a>
+    <a href="contact.html" class="block w-full px-5 py-3 text-gray-300 border-b border-gray-600 hover:bg-gray-600 hover:text-green-400 transition duration-200">📬 تواصل معنا</a>
+    <a href="privacy.html" class="block w-full px-5 py-3 text-green-400 font-bold">🔒 سياسة الخصوصية</a>
+  </div>
+
+  <!-- Hero Banner -->
+  <div class="bg-gray-800 text-white py-16 text-center relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(0deg,transparent,transparent 31px,#2ecc71 31px,#2ecc71 32px),repeating-linear-gradient(90deg,transparent,transparent 31px,#2ecc71 31px,#2ecc71 32px);"></div>
+    <div class="relative z-10">
+      <div class="text-6xl mb-4">🔒</div>
+      <h1 class="text-4xl font-bold text-green-400 mb-3">سياسة الخصوصية</h1>
+      <p class="text-gray-300 text-lg max-w-xl mx-auto">نحن نحترم خصوصيتكم ونسعى لحماية معلوماتكم</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-12 max-w-3xl">
+
+    <div class="bg-white rounded-2xl shadow-md p-8 mb-6 text-right border-r-4 border-green-500">
+      <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2 justify-end">
+        الخصوصية واحترام الزوار <span>🛡️</span>
+      </h2>
+      <p class="text-gray-600 leading-relaxed">نحن نحترم خصوصية زوار موقعنا ونسعى لحماية معلوماتهم.</p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-md p-8 mb-6 text-right border-r-4 border-blue-500">
+      <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2 justify-end">
+        جمع المعلومات <span>📊</span>
+      </h2>
+      <p class="text-gray-600 leading-relaxed">
+        قد نقوم بجمع بعض المعلومات غير الشخصية مثل نوع المتصفح والجهاز والصفحات التي يتم زيارتها، وذلك لتحسين تجربة المستخدم وتطوير الموقع.
+      </p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-md p-8 mb-6 text-right border-r-4 border-yellow-500">
+      <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2 justify-end">
+        خدمات الطرف الثالث <span>🍪</span>
+      </h2>
+      <p class="text-gray-600 leading-relaxed">
+        قد يستخدم موقعنا خدمات طرف ثالث مثل <span class="font-bold text-gray-700">Google AdSense</span> أو أدوات التحليل التي تعتمد على ملفات تعريف الارتباط (Cookies) لعرض الإعلانات وتحسين الخدمات.
+      </p>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-md p-8 mb-6 text-right border-r-4 border-purple-500">
+      <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2 justify-end">
+        الروابط الخارجية <span>🔗</span>
+      </h2>
+      <p class="text-gray-600 leading-relaxed">
+        موقعنا يحترم حقوق الملكية الفكرية للمطورين. الروابط المتاحة لبعض المودات هي روابط اعادة توجيه للمصادر الرسمية التي وفرها صناع المحتوى الاصليون, والموقع لا يستضيف هذه الملفات على خوادمه الخاصة ولا يدعي ملكيتها.
+      </p>
+    </div>
+
+    <div class="bg-green-50 rounded-2xl shadow-md p-8 mb-6 text-right border-r-4 border-green-400">
+      <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2 justify-end">
+        الموافقة على السياسة <span>✅</span>
+      </h2>
+      <p class="text-gray-600 leading-relaxed">باستخدامك لهذا الموقع فإنك توافق على سياسة الخصوصية الخاصة بنا.</p>
+    </div>
+
+    <div class="bg-gray-800 text-white rounded-2xl shadow-md p-8 text-center">
+      <div class="text-4xl mb-4">💬</div>
+      <h2 class="text-xl font-bold text-green-400 mb-3">هل لديك استفسار؟</h2>
+      <p class="text-gray-300 leading-relaxed">
+        إذا كان لديك أي استفسار بخصوص سياسة الخصوصية، يمكنك التواصل معنا عبر
+        <a href="contact.html" class="text-green-400 hover:text-green-300 underline">صفحة التواصل</a>.
+      </p>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="bg-gray-800 text-white py-8 mt-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center" dir="ltr">
+        <div class="mb-4 md:mb-0 text-right" dir="rtl">
+          <h2 class="text-xl font-bold text-green-400 mb-2">MyCraftMods</h2>
+          <p class="text-gray-400">The best Minecraft mods collection</p>
+          <p class="text-gray-400">v--BetaX</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="https://www.instagram.com/ahilyasse?igsh=cGJoZzB1NG1jOHF0" target="_blank" class="text-gray-400 hover:text-green-400 transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://youtube.com/@ilyasse_a-h?si=eOnM6XA6csAKBTYH" target="_blank" class="text-gray-400 hover:text-green-400 transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="mt-6 text-center text-gray-500 text-sm">
+        © <span id="year"></span> IlYasSe_Ah. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    var bb = document.getElementById("burgerBtn"), mn = document.getElementById("mobileNav");
+    if (bb && mn) { bb.addEventListener("click", function(){ mn.classList.toggle("hidden"); }); }
+  </script>
+</body>
+</html>
