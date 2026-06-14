@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
-  <head>
+    <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7542591684540065"
+     crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyCraftMods - Best Minecraft Mods Collection</title>
@@ -38,6 +40,192 @@
       .page-btn.page-next:hover, .page-btn.page-prev:hover { background-color: #27ae60; border-color: #219a52; color: #ffffff; }
       [id^="pagination-"] { display: flex !important; justify-content: center !important; align-items: center !important; flex-wrap: wrap; gap: 8px; width: 100%; margin: 2.5rem auto 1rem auto; }
       .section-heading { display: inline-flex; align-items: center; gap: 8px; background: rgba(46,204,113,0.12); border: 1.5px solid rgba(46,204,113,0.3); border-radius: 999px; padding: 6px 20px; margin-bottom: 28px; }
+
+      /* ===== TEAM TAB SPECIAL STYLES ===== */
+      .tab-btn-team {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%) !important;
+        color: #e2b96f !important;
+        border: 2px solid #e2b96f !important;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 12px rgba(226,185,111,0.25);
+      }
+      .tab-btn-team::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(226,185,111,0.08) 0%, transparent 100%);
+        pointer-events: none;
+      }
+      .tab-btn-team:hover {
+        background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%) !important;
+        border-color: #f0cc82 !important;
+        color: #f0cc82 !important;
+        box-shadow: 0 0 20px rgba(226,185,111,0.4);
+      }
+      .active-tab-team {
+        background: linear-gradient(135deg, #e2b96f 0%, #c9983a 100%) !important;
+        color: #1a1a2e !important;
+        border-color: #c9983a !important;
+        box-shadow: 0 0 20px rgba(226,185,111,0.5) !important;
+      }
+
+      .team-section-header {
+        position: relative;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+        border-radius: 16px;
+        padding: 32px 28px;
+        margin-bottom: 32px;
+        overflow: hidden;
+        border: 1.5px solid rgba(226,185,111,0.35);
+      }
+      .team-section-header::before {
+        content: '';
+        position: absolute;
+        top: -60px; right: -60px;
+        width: 200px; height: 200px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(226,185,111,0.12) 0%, transparent 70%);
+        pointer-events: none;
+      }
+      .team-section-header::after {
+        content: '';
+        position: absolute;
+        bottom: -40px; left: -40px;
+        width: 150px; height: 150px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(226,185,111,0.08) 0%, transparent 70%);
+        pointer-events: none;
+      }
+      .team-section-header h2 {
+        color: #e2b96f;
+        font-size: 1.9rem;
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        text-shadow: 0 2px 12px rgba(226,185,111,0.3);
+        position: relative; z-index: 2;
+      }
+      .team-section-header p {
+        color: rgba(255,255,255,0.7);
+        font-size: 0.95rem;
+        margin-top: 6px;
+        position: relative; z-index: 2;
+      }
+      .team-badge {
+        display: inline-block;
+        background: rgba(226,185,111,0.18);
+        border: 1px solid rgba(226,185,111,0.45);
+        color: #e2b96f;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        padding: 3px 12px;
+        border-radius: 999px;
+        margin-bottom: 10px;
+        position: relative; z-index: 2;
+      }
+
+      .team-mod-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background: linear-gradient(160deg, #1e2235 0%, #16213e 100%);
+        border: 1.5px solid rgba(226,185,111,0.25);
+        border-radius: 14px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        position: relative;
+      }
+      .team-mod-card::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, #e2b96f, #c9983a, #e2b96f);
+        opacity: 0.7;
+      }
+      .team-mod-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 30px rgba(226,185,111,0.2), 0 4px 12px rgba(0,0,0,0.3);
+        border-color: rgba(226,185,111,0.55);
+      }
+      .team-mod-card .card-body {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 16px;
+        text-align: right;
+      }
+      .team-mod-card h3 {
+        color: #e2b96f;
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      .team-mod-card p {
+        color: rgba(255,255,255,0.65);
+        font-size: 0.88rem;
+        line-height: 1.55;
+        margin-bottom: 14px;
+        flex-grow: 1;
+      }
+      .team-mod-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-bottom: 1.5px solid rgba(226,185,111,0.2);
+      }
+      .team-mod-card .img-placeholder {
+        width: 100%;
+        height: 180px;
+        background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1.5px solid rgba(226,185,111,0.2);
+      }
+      .team-mod-card .img-placeholder span {
+        font-size: 2.5rem;
+        opacity: 0.5;
+      }
+      .team-btn {
+        display: inline-block;
+        background: linear-gradient(135deg, #e2b96f 0%, #c9983a 100%);
+        color: #1a1a2e;
+        font-weight: 700;
+        font-size: 0.88rem;
+        padding: 8px 20px;
+        border-radius: 8px;
+        text-align: center;
+        transition: all 0.25s;
+        text-decoration: none;
+        margin-top: auto;
+        border: none;
+        cursor: pointer;
+      }
+      .team-btn:hover {
+        background: linear-gradient(135deg, #f0cc82 0%, #e2b96f 100%);
+        box-shadow: 0 4px 14px rgba(226,185,111,0.4);
+        transform: translateY(-1px);
+      }
+      .team-divider {
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(226,185,111,0.3), transparent);
+        margin: 28px 0;
+      }
+      .team-empty-state {
+        grid-column: 1 / -1;
+        text-align: center;
+        padding: 48px 24px;
+        background: linear-gradient(160deg, #1e2235 0%, #16213e 100%);
+        border: 1.5px dashed rgba(226,185,111,0.3);
+        border-radius: 14px;
+      }
+      .team-empty-state .icon { font-size: 3rem; margin-bottom: 12px; opacity: 0.6; }
+      .team-empty-state h3 { color: #e2b96f; font-size: 1.2rem; font-weight: 700; margin-bottom: 6px; }
+      .team-empty-state p { color: rgba(255,255,255,0.5); font-size: 0.9rem; }
+      /* ===== END TEAM STYLES ===== */
     </style>
   </head>
   <body class="min-h-screen flex flex-col">
@@ -76,6 +264,7 @@
           <button onclick="switchTab('maps')" id="tab-maps" class="tab-btn px-5 py-2 rounded-full font-bold text-sm md:text-base transition-all duration-200 shadow-sm">🗺️ مابات</button>
           <button onclick="switchTab('seeds')" id="tab-seeds" class="tab-btn px-5 py-2 rounded-full font-bold text-sm md:text-base transition-all duration-200 shadow-sm">🌱 سيدات</button>
           <button onclick="switchTab('shaders')" id="tab-shaders" class="tab-btn px-5 py-2 rounded-full font-bold text-sm md:text-base transition-all duration-200 shadow-sm">✨ شادرات</button>
+          <button onclick="switchTab('team')" id="tab-team" class="tab-btn tab-btn-team px-5 py-2 rounded-full font-bold text-sm md:text-base transition-all duration-200 shadow-sm">⚔️ مودات الفريق</button>
         </div>
       </div>
       <div class="max-w-2xl mx-auto mb-10">
@@ -212,6 +401,98 @@
         </div>
         <div id="pagination-shaders"></div>
       </section>
+
+      <!-- ===== TEAM MODS SECTION ===== -->
+      <section id="section-team" class="tab-section hidden" dir="rtl">
+        <div class="team-section-header">
+          <div class="team-badge">⚔️ حصري</div>
+          <h2>مودات الفريق</h2>
+          <p>مودات مختارة بعناية من فريق MyCraftMods — إضافات حصرية وموصى بها بشكل خاص</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="team-mods-grid">
+          <!-- TEAM MOD CARDS GO HERE — add more cards below this comment -->
+
+          <!-- Example team mod card 1 -->
+          <div class="team-mod-card">
+  <img src="./images/40.jpg" alt="مود اللغة العربية" />
+  <div class="card-body">
+    <h3 class="title">مود اللغة العربية</h3>
+    <p>مود بسيط يقوم بإصلاح مشكل عدم دعم ماينكرافت بيدروك للغة العربية.</p>
+    <a href="pages/mod60.html" class="team-btn">المزيد</a>
+  </div>
+</div>
+
+          <!-- Example team mod card 2 -->
+         <div class="team-mod-card">
+  <img src="./images/41.jpg" alt="مود المصعد" />
+  <div class="card-body">
+    <h3 class="title">مود المصعد</h3>
+    <p>مود يعمل على نقلك صعودا ونزولا باستخدام بلوكة المصعد.</p>
+    <a href="pages/mod61.html" class="team-btn">المزيد</a>
+  </div>
+</div>
+           <!-- Example team mod card 3 -->
+         <div class="team-mod-card">
+  <img src="./images/42.jpg" alt="مود الاحصائيات" />
+  <div class="card-body">
+    <h3 class="title">مود الاحصائيات</h3>
+    <p>مود يساعدك على تتبع احصائيات تقدمك انت او حتى اصحابك. </p>
+    <a href="pages/mod62.html" class="team-btn">المزيد</a>
+  </div>
+</div>
+           <!-- Example team mod card 4 -->
+         <div class="team-mod-card">
+  <img src="./images/43.jpg" alt="مود برطمان الموبات" />
+  <div class="card-body">
+    <h3 class="title">مود برطمان الموبات</h3>
+    <p>مود يمكنك من حبس الموبات في برطمان في الان</p>
+    <a href="pages/mod63.html" class="team-btn">المزيد</a>
+  </div>
+</div>
+            <!-- Example team mod card 5 -->
+         <div class="team-mod-card">
+  <img src="./images/44.jpg" alt="مود السلايم بوت" />
+  <div class="card-body">
+    <h3 class="title">مود السلايم بوت</h3>
+    <p>مود يمكنك من حبس الموبات في برطمان في الان</p>
+    <a href="pages/mod64.html" class="team-btn">المزيد</a>
+  </div>
+</div>
+            <!-- Example team mod card 6 -->
+         <div class="team-mod-card">
+  <img src="./images/45.webp" alt="مود رؤوس اللاعبين" />
+  <div class="card-body">
+    <h3 class="title">مود رؤوس اللاعبين</h3>
+    <p>مود يسمح بك بإنشاء وإدارة حزم رؤوس اللاعبين المخصصة داخل ماين كرافت البيدروك</p>
+    <a href="pages/mod65.html" class="team-btn">المزيد</a>
+  </div>
+</div>
+            <!-- Example team mod card 7 -->
+         <div class="team-mod-card">
+  <img src="./images/46.webp" alt="مود اللود ستون" />
+  <div class="card-body">
+    <h3 class="title">مود اللود ستون</h3>
+    <p>الانتقال الفوري بين نقاط موقعك المختلفة مهما كانت المسافة.</p>
+    <a href="pages/mod66.html" class="team-btn">المزيد</a>
+  </div>
+</div>
+            <!-- Example team mod card 8 -->
+         <div class="team-mod-card">
+  <img src="./images/47.png" alt="مود الخطاف" />
+  <div class="card-body">
+    <h3 class="title">مود الخطاف</h3>
+    <p>مود يضيف عدد من الخطافات بميزات متعددة تساعدك للتنقل حول العالم.</p>
+    <a href="pages/mod67.html" class="team-btn">المزيد</a>
+  </div>
+</div>
+          <!-- ADD NEW TEAM MOD CARDS ABOVE THIS LINE -->
+        </div>
+
+        <div id="pagination-team"></div>
+      </section>
+      <!-- ===== END TEAM SECTION ===== -->
+
     </main>
 
     <footer id="footer" class="bg-gray-800 text-white py-8">
@@ -238,15 +519,23 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
-      const tabMap = {mods:"section-mods",modpacks:"section-modpacks",resourcepacks:"section-resourcepacks",maps:"section-maps",seeds:"section-seeds",shaders:"section-shaders"};
+      const tabMap = {mods:"section-mods",modpacks:"section-modpacks",resourcepacks:"section-resourcepacks",maps:"section-maps",seeds:"section-seeds",shaders:"section-shaders",team:"section-team"};
       function switchTab(tabKey) {
         document.querySelectorAll(".tab-section").forEach(s=>s.classList.add("hidden"));
-        document.querySelectorAll(".tab-btn").forEach(b=>b.classList.remove("active-tab"));
+        document.querySelectorAll(".tab-btn").forEach(b=>{
+          b.classList.remove("active-tab");
+          if(b.id==="tab-team"){b.classList.remove("active-tab-team");}
+        });
         document.getElementById(tabMap[tabKey]).classList.remove("hidden");
-        document.getElementById("tab-"+tabKey).classList.add("active-tab");
+        const activeBtn = document.getElementById("tab-"+tabKey);
+        if(tabKey==="team"){
+          activeBtn.classList.add("active-tab-team");
+        } else {
+          activeBtn.classList.add("active-tab");
+        }
         const input=document.getElementById("searchInput");
         input.value="";
-        document.querySelectorAll(".mod-card").forEach(c=>c.style.display="");
+        document.querySelectorAll(".mod-card, .team-mod-card").forEach(c=>c.style.display="");
         initPagination(tabKey);
       }
       const burgerBtn=document.getElementById("burgerBtn");
@@ -256,13 +545,13 @@
     <script>
       const CARDS_PER_PAGE=12;
       const paginationState={};
-      const sectionKeys=["mods","modpacks","resourcepacks","maps","seeds","shaders"];
+      const sectionKeys=["mods","modpacks","resourcepacks","maps","seeds","shaders","team"];
       function initPagination(tabKey){
         const section=document.getElementById("section-"+tabKey);
         if(!section)return;
         const grid=section.querySelector(".grid");
         if(!grid)return;
-        const cards=Array.from(grid.querySelectorAll(".mod-card"));
+        const cards=Array.from(grid.querySelectorAll(".mod-card, .team-mod-card"));
         if(!paginationState[tabKey])paginationState[tabKey]={current:1};
         renderPage(tabKey,cards,paginationState[tabKey].current);
       }
@@ -286,7 +575,7 @@
           btn.className="page-btn"+(isActive?" active-page":"")+(extraClass?" "+extraClass:"");
           btn.textContent=label;
           if(isEllipsis){btn.disabled=true;btn.style.cursor="default";btn.style.borderColor="#e5e7eb";btn.style.color="#9ca3af";}
-          else{btn.addEventListener("click",()=>{const section=document.getElementById("section-"+tabKey);const grid=section.querySelector(".grid");const cards=Array.from(grid.querySelectorAll(".mod-card"));renderPage(tabKey,cards,page);window.scrollTo({top:0,behavior:"smooth"});}); }
+          else{btn.addEventListener("click",()=>{const section=document.getElementById("section-"+tabKey);const grid=section.querySelector(".grid");const cards=Array.from(grid.querySelectorAll(".mod-card, .team-mod-card"));renderPage(tabKey,cards,page);window.scrollTo({top:0,behavior:"smooth"});});}
           return btn;
         };
         if(current>1)container.appendChild(makeBtn("« Prev",current-1,false,false,"page-prev"));
@@ -313,7 +602,7 @@
         const container=document.getElementById("pagination-"+tabKey);
         if(this.value.trim()){
           if(container)container.innerHTML="";
-          activeSection.querySelectorAll(".mod-card").forEach(c=>{
+          activeSection.querySelectorAll(".mod-card, .team-mod-card").forEach(c=>{
             const titleEl=c.querySelector(".title");
             if(titleEl)c.style.display=titleEl.textContent.toLowerCase().includes(this.value.toLowerCase())?"":"none";
           });
